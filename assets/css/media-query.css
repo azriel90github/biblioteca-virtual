@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/*Largura Minima-----------------------------------------*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+
+@media only screen and (max-width: 576px) {
+
+    .nav-logo p {
+        display: none;
+    }
+
+    .book-list {
+        display: grid;
+        grid-template-columns: 300px;
+    }
+
+    #services-container{
+        padding: 50px 40px;
+        background-color: #2f3e5259;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .book-list {
+        display: grid;
+        grid-template-columns: 300px;
+    }
+
+}
+
+/*Iphone 6------------------------------------------*/
+
+@media (min-width: 375px) and (max-width: 667px) {
+
+    .classe {
+        padding-top: 0px;
+    }
+
+    .classe button {
+        margin-top: 100px;
+        padding: 12px;
+        font-weight: 400;
+        margin-right: 2px;
+        font-size: 11px;
+    }
+
+    .nav-menu-btn {
+        padding-top: 5px;
+        padding-right: 20px;
+    }
+
+}
+
+/*Iphone 5------------------------------------------*/
+
+@media (min-width: 320px) and (max-width: 568px) {
+
+    .search-container {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+
+
+    .classe {
+        padding-top: 80px;
+    }
+
+    .classe button {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 10px;
+
+    }
+
+
+    .book-list {
+        display: grid;
+        grid-template-columns: 250px;
+    }
+
+}
+
+/*Surface pro 7-------------------------------------*/
+
+@media (min-width: 912px) and (max-width: 1368px) {
+    .book-list {
+        display: grid;
+        grid-template-columns: 300px 300px ;
+    }
+
+    figure {
+        padding-left: 40px;
+    }
+
+    nav {
+        padding-left: 30px;
+    }
+
+    .search-container {
+        display: none;
+    }
+}
+
+/*Ipade Mini----------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .book-list {
+        display: grid;
+        grid-template-columns: 300px 300px ;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

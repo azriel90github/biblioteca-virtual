@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/login.css">
+    <title>IPIAL - Library</title>
+</head>
+<body>
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p><span><i class='bx bx-book-bookmark'></i></span>IPIAL Library</p>
+        </div><!--
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#" class="link active">Home</a></li>
+                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="#" class="link">Services</a></li>
+                <li><a href="#" class="link">About</a></li>
+            </ul>
+        </div>
+        -->
+        <div class="nav-button">
+            <button class="btn white-btn" id="loginBtn" onclick="login()">Iniciar sessão</button>
+            <button class="btn" id="registerBtn" onclick="register()">Registar-me</button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+    <!----------------------------- Login ----------------------------------->    
+    <div class="form-box">
+        
+        <!------------------- login form -------------------------->
+        <div class="login-container" id="login">
+            <div class="top">
+                <span>Não tem uma conta? <a href="#" onclick="register()">Registar-me</a></span>
+                <header>Iniciar sessão</header>
+            </div>
+            <div class="input-box">
+                <input type="number" class="input-field" placeholder="Número Estudante">
+                <i class='bx bx-user-pin' ></i>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="E-mail">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Senha">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <a href="#"><input type="submit" class="submit" value="Entrar"></a>
+            </div>
+            <!--
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+            -->
+        </div>
+        <!------------------- registration form -------------------------->
+        <div class="register-container" id="register">
+            <div class="top">
+                <span>Tenho uma conta? <a href="#" onclick="login()">Iniciar sessão</a></span>
+                <header>Cadastrar</header>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Nome próprio">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Apelido">
+                    <i class="bx bx-user"></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="number" class="input-field" placeholder="Número Estudante">
+                <i class='bx bx-user-pin' ></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Senha">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Confirmar Senha">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <a href="#"><input type="submit" class="submit" value="Criar"></a>
+            </div>
+            <!--
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Terms & conditions</a></label>
+                </div>
+            </div>
+            -->
+        </div>
+    </div>
+</div>   
+
+<!--Menu responsivo---------------------->
+<script>
+   
+   function myMenuFunction() {
+    var i = document.getElementById("navMenu");
+    if(i.className === "nav-menu") {
+        i.className += " responsive";
+    } else {
+        i.className = "nav-menu";
+    }
+   }
+ 
+</script>
+
+<!--Funções Login-------------------------->
+<script>
+    var a = document.getElementById("loginBtn");
+    var b = document.getElementById("registerBtn");
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    function login() {
+        x.style.left = "4px";
+        y.style.right = "-520px";
+        a.className += " white-btn";
+        b.className = "btn";
+        x.style.opacity = 1;
+        y.style.opacity = 0;
+    }
+    function register() {
+        x.style.left = "-510px";
+        y.style.right = "5px";
+        a.className = "btn";
+        b.className += " white-btn";
+        x.style.opacity = 0;
+        y.style.opacity = 1;
+    }
+</script>
+</body>
+</html>
+
+
+
+360*740 - Sansung Galaxy S8
+
+360*640 - Black Barry Z30
+
+375*667 - Iphone SE
+
+375*812 - Iphone X
+
+
+
